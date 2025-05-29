@@ -147,3 +147,63 @@ body {
     margin: 0;
     padding: 0;
     }
+
+/* 🔽 Teléfonos y pantallas menores a 768px */
+@media (max-width: 768px) {
+  body {
+    padding: 1rem;
+    font-size: 0.95rem;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  .mensaje {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+
+  .photo img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .section {
+    padding: 1rem;
+  }
+
+  .section h2 {
+    font-size: 1.2rem;
+  }
+
+  .btn {
+    font-size: 1rem;
+    padding: 0.6rem 1.2rem;
+  }
+
+  .notita1 {
+    font-size: 1rem;
+  }
+
+  .notita2 {
+    font-size: 0.75rem;
+  }
+}
+
+/* 🔽 Pantallas MUY pequeñas (ej. celulares de 320px) */
+@media (max-width: 400px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  .mensaje {
+    font-size: 0.9rem;
+  }
+
+  .btn {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+}
