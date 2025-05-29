@@ -8,20 +8,26 @@
 } 
  
  body {
-      margin: 0;
-      font-family: 'Open Sans', sans-serif;
-      background: #fff8f1;
-      color: #333;
+    margin: 0;
+    color: #333;
+    background: url('fondo.webp') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Segoe UI', sans-serif;
+    padding: 0;
+    background-position: center;
+    background-repeat: no-repeat;
     }
 
-header {
+
+.textito{
       text-align: center;
       padding: 2rem;
       background: #ffe8e0;
-      animation: fadeInUp 1s ease-out;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    animation: fadeInUp 1s ease;
 }
     
-header h1 {
+.textito h1 {
       font-family: 'Great Vibes', cursive;
       font-size: 3rem;
       margin: 0;
@@ -139,14 +145,6 @@ footer {
             opacity: 1;
             transform: translateY(0);
         }
-    }
-
-body {
-    background: url('fondo.webp') no-repeat center center fixed;
-    background-size: cover;
-    font-family: 'Segoe UI', sans-serif;
-    margin: 0;
-    padding: 0;
     }
 
 
