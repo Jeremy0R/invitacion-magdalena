@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+ 
+ body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background: #fff8f1;
+      color: #333;
+    }
+
+header {
+      text-align: center;
+      padding: 2rem;
+      background: #ffe8e0;
+}
+    
+header h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 3rem;
+      margin: 0;
+      color: #a0352d;
+    }
+
+.mensaje{
+    font-weight: bolder;
+    font-size: 1.5em;
+}
+
+.container {
+      max-width: 600px;
+      margin: auto;
+      padding: 1rem;
+    }
+
+.photo {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    }
+
+.photo img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+.section {
+      margin-bottom: 2rem;
+    }
+
+.section h2 {
+      color: #c04000;
+      font-size: 1.5rem;
+    }
+
+.section p {
+      font-size: 1.1rem;
+    }
+
+.btn {
+      display: inline-block;
+      padding: 0.8rem 1.5rem;
+      background: #c04000;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 10px;
+      font-weight: bold;
+      margin-top: 1rem;
+    }
+
+.btn:hover {
+      background: #a23200;
+    }
+
+.section {
+        background: rgba(255, 240, 229, 0.95); /* semi transparente para que resalte sobre el fondo */
+        border: 2px dashed #c04000;
+        padding: 1.5rem;
+        border-radius: 15px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        margin: 2rem auto;
+        max-width: 400px;
+        text-align: center;
+        position: relative;
+        animation: fadeInUp 1s ease-out;
+    }
+
+.section h2 {
+        color: #a03800;
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+
+.section #pase {
+        font-size: 1.2rem;
+        color: #5a2a00;
+        font-weight: bold;
+        margin-top: 0.5rem;
+    }
+
+footer {
+    text-align: center;
+    margin-top: 3rem;
+    padding: 1rem 0;
+    }
+
+.notita1 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #e8dcd8; /* tono marrón suave, puedes cambiar */
+    margin-bottom: 0.3rem;
+    }
+
+.notita2 {
+    font-size: 0.8rem;
+    color: #aaa;
+    font-style: italic;
+    }
+
+        /* Animación */
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(40px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+body {
+    background: url('fondo_invitacion.webp') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    }

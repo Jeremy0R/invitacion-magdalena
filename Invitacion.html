@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Invitación Cumpleaños Magdalena</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Style.css">
+
+</head>
+    <body>
+        <header>
+            <h1>Magdalena García García</h1>
+            <br>
+            <p class="mensaje">Te invita a celebrar su cumpleaños con una fiesta de temática Istmeña</p>
+        </header>
+
+        <div class="container">
+
+            <div class="photo">
+                <img src="Magda.webp" alt="Foto de la Sra. Magdalena">
+            </div>
+            
+            <div class="section">
+            <h2>📿 Misa de acción de gracias</h2>
+            <p>Sábado 12 de Julio a las <strong>12:00 Hrs</strong>, en la Parroquia de la Sagrada Familia</p>
+            <a class="btn" href="https://maps.app.goo.gl/PD6iMRq7sJTsQQX17?g_st=aw" target="_blank">Ver en Google Maps</a>
+            </div>
+
+            <div class="section">
+            <h2>🎉 Fiesta</h2>
+            <p>En el salón <strong>Quinta Don Julián</strong><br>
+                ubicado en Calle Valladolid Colonia Porfirio Díaz, Salina Cruz, Oaxaca.<br>
+                Hora: <strong>14:00 Hrs</strong></p>
+            <a class="btn" href="https://maps.app.goo.gl/guQB49wbwxNMfYZM7" target="_blank">Ver en Google Maps</a>
+            </div>
+
+            <div class="section">
+                <h2>🎟 Pase</h2>
+                <p id="pase">Cargando pase personalizado...</p>
+            </div>
+
+
+            <div class="section">
+                <h2>📲 Confirmación</h2>
+                <p>Por favor confirma tu asistencia:</p>
+                <a class="btn" href="https://wa.me/529711259141?text=Hola!%20Confirmo%20mi%20asistencia%20al%20cumplea%C3%B1os%20de%20Magdalena" target="_blank">Confirmar por WhatsApp</a>
+            </div>
+        </div>
+
+        <footer>
+            <p class="notita1">¡Esperamos verte allí para celebrar juntos! 🌸</p>
+            <br><br>
+            <p class="notita2">Desarrollado por Jeremy Osorio Ramos 😎</p>
+        </footer>
+
+         <script>
+            const params = new URLSearchParams(window.location.search);
+            const pase = params.get('pase');
+
+            if (pase) {
+                const num = parseInt(pase);
+                const texto = num === 1 ? "persona" : "personas";
+                document.getElementById('pase').innerText = `🎟 Pase válido para ${num} ${texto}`;
+            }
+
+        </script>
+
+    </body>
+</html>
+
