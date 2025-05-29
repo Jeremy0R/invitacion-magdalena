@@ -14,8 +14,6 @@
     background-size: cover;
     font-family: 'Segoe UI', sans-serif;
     padding: 0;
-    background-position: center;
-    background-repeat: no-repeat;
     }
 
 
@@ -25,6 +23,7 @@
       background: #ffe8e0;
       transition: transform 0.4s ease, box-shadow 0.4s ease;
     animation: fadeInUp 1s ease;
+    width: 100%;
 }
     
 .textito h1 {
@@ -49,6 +48,8 @@
     width: 100%;
     text-align: center;
     margin-bottom: 1.5rem;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    animation: fadeInUp 1s ease;
     }
 
 .photo img {
