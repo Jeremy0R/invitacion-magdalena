@@ -40,6 +40,10 @@
                 <p id="pase">Cargando pase personalizado...</p>
             </div>
 
+            <div class="section">
+                <h2>🍽 Mesa asignada</h2>
+                <p id="mesa">Cargando tu mesa...</p>
+            </div>
 
             <div class="section">
                 <h2>📲 Confirmación</h2>
@@ -59,13 +63,17 @@
          <script>
             const params = new URLSearchParams(window.location.search);
             const pase = params.get('pase');
+            const mesa = params.get('mesa');
 
-            if (pase) {
+            if (pase && document.getElementById('pase')) {
                 const num = parseInt(pase);
                 const texto = num === 1 ? "persona" : "personas";
                 document.getElementById('pase').innerText = `🎟 Pase válido para ${num} ${texto}`;
             }
 
+            if (mesa && document.getElementById('mesa')) {
+                document.getElementById('mesa').innerText = `Tu mesa es la número ${mesa}`;
+            }
         </script>
 
     </body>

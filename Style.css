@@ -136,6 +136,18 @@ footer {
     font-style: italic;
     }
 
+.section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+#mesa {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #6b2f1d;
+}
+
+
         /* Animación */
     @keyframes fadeInUp {
         from {
